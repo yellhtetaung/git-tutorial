@@ -2,9 +2,9 @@
 
 ### SSH Key generation
 
-ssh-keygen
-file => Home/.ssh/id_rsa.pub
-setting > ssh and gpg key > new ssh key
+- ssh-keygen
+- file => Home/.ssh/id_rsa.pub
+- setting > ssh and gpg key > new ssh key
 
 ---
 
