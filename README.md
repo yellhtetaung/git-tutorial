@@ -57,3 +57,17 @@ git branch branchname
 ```bash
 git checkout branchname
 ```
+
+- Push In Current Branch
+
+```bash
+git push -u origin Head
+```
+
+Head refer to current branch
+
+- Push In Master Branch or compare to master
+
+```bash
+git push -u origin Head:master
+```
