@@ -2,9 +2,11 @@
 
 ### SSH Key generation
 
-- ssh-keygen
-- file => Home/.ssh/id_rsa.pub
-- setting > ssh and gpg key > new ssh key
+| Title                 | Description                              |
+| --------------------- | ---------------------------------------- |
+| ssh-keygen            | generate ssh key                         |
+| directory             | ~/.ssh/id_rsa.pub                        |
+| Add ssh-key in github | Setting > SSH and GPG keys > New SSH-Key |
 
 ---
 
@@ -19,55 +21,46 @@ git config —global user.email “gmail”
 
 ### git config check
 
+```bash
 git config user.name
-=> username
+username
+```
 
+```bash
 git config user.email
-=> gmail
+gmail
+```
 
 ---
 
 ### git add and push
 
-git init => one time
-git remote add origin repositorylink => one thime
+```bash
+git init
+git remote add origin repository
 
-git add . ( or ) git add -A => all file / git add filename => filename
-git commit -m “note”
-git push -u origin master ( or ) git push -u origin main
+git add -A
+git commit -m "note"
+git push -u origin master
+```
+
+| Command                                                | Description                                                                                                                                                           |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| git init                                               | this keyword must be use once time in this project                                                                                                                    |
+| git remote add origin repository                       | this keyword must be use once time in this project                                                                                                                    |
+| git add -A (or) git add .                              | this keyword is selected All file                                                                                                                                     |
+| git add filename                                       | this keyword is selected file same with filename                                                                                                                      |
+| git commit -m 'note'                                   | this keyword is note                                                                                                                                                  |
+| git push -u origin master (or) git push -u origin main | this keyword is push to the repository <br/> your repository branch is master and then push to the master or your repository branch is main and then push to the main |
 
 ---
 
 ### Git Branch
 
-- Branch Check
-
-```bash
-git branch
-```
-
-- Create New Branch
-
-```bash
-git branch branchname
-```
-
-- Switch Branch
-
-```bash
-git checkout branchname
-```
-
-- Push In Current Branch
-
-```bash
-git push -u origin Head
-```
-
-Head refer to current branch
-
-- Push In Master Branch or compare to master
-
-```bash
-git push -u origin Head:master
-```
+| Command                        | Description                                   |
+| ------------------------------ | --------------------------------------------- |
+| git branch                     | check branch                                  |
+| git branch branchname          | create new branch                             |
+| git checkout branchname        | change branch                                 |
+| git push -u origin Head        | push to the current branch                    |
+| git push -u origin Head:master | Current branch data push to the master branch |
